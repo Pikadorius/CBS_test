@@ -56,7 +56,7 @@ const validateConfirmPassword = (input, passwordInput) => {
     const value = input.value.trim();
 
     if (!value || value !== passwordInput.value.trim()) {
-        return showError(input, 'Password mismatch');
+        return showError(input, 'Passwords mismatch!');
     } else {
         return showError(input, '');
     }
@@ -108,3 +108,15 @@ form.addEventListener('submit', async (e) => {
         }
     }
 });
+
+function showPasswords() {
+    var x = document.getElementById('password');
+    var y = document.getElementById('confirmPassword');
+    if (x.type === 'password') {
+        x.type = 'text';
+        y.type = 'text';
+    } else {
+        x.type = 'password';
+        y.type = 'password';
+    }
+}
