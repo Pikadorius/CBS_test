@@ -15,7 +15,8 @@ const showError = (input, message) => {
 
 const validateData = (input) => {
     const value = input.value.trim();
-    if (value.length < 2 || value.length > 25) {
+    if (value.length === 0) return showError(input, 'Required field!');
+    else if (value.length < 2 || value.length > 25) {
         return showError(input, 'The field must contain from 2 to 25 characters.');
     } else {
         return showError(input, '');
@@ -91,7 +92,7 @@ form.addEventListener('submit', async (e) => {
         };
 
         try {
-            loading.style.display="flex";
+            loading.style.display = 'flex';
             const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
                 body: JSON.stringify(formData),
@@ -108,7 +109,7 @@ form.addEventListener('submit', async (e) => {
         } catch (e) {
             console.log(e);
         } finally {
-            loading.style.display="none"
+            loading.style.display = 'none'
         }
     }
 });
