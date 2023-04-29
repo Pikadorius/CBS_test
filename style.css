@@ -67,6 +67,7 @@ button[type="submit"] {
 }
 
 .error {
+  text-align: center;
   color: red;
   font-size: 10px;
   margin-top: 5px;
