@@ -49,6 +49,11 @@ input {
   color: rgb(34, 34, 91);
 }
 
+
+input[type="checkbox"] {
+  width: auto;
+}
+
 button[type="submit"] {
   align-self: center;
   padding: 15px 5px;
@@ -77,7 +82,8 @@ button[type="submit"] {
 }
 
 .showPass {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
