@@ -13,52 +13,54 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="loading" id="loading">Loading...</div>
-    <form name="registerForm" class="form" id="registerForm" novalidate>
-        <h1 class="title">Registration</h1>
-        <div class="field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <p class="error"></p>
-        </div>
+    <div class="container">
+        <div class="loading" id="loading">Loading...</div>
+        <form name="registerForm" class="form" id="registerForm" novalidate>
+            <h1 class="title">Registration</h1>
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <p class="error"></p>
+            </div>
 
-        <div class="field">
-            <label class="label" for="surname">Surname</label>
-            <input type="text" name="surname" id="surname">
-            <p class="error"></p>
-        </div>
+            <div class="field">
+                <label class="label" for="surname">Surname</label>
+                <input type="text" name="surname" id="surname">
+                <p class="error"></p>
+            </div>
 
-        <div class="field">
-            <label class="label" for="birthday">Birthday</label>
-            <input type="date" name="birthday" id="birthday">
-            <p class="error"></p>
-        </div>
+            <div class="field">
+                <label class="label" for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday">
+                <p class="error"></p>
+            </div>
 
-        <div class="field">
-            <label class="label" for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <p class="error"></p>
-        </div>
+            <div class="field">
+                <label class="label" for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <p class="error"></p>
+            </div>
 
-        <div class="field">
-            <label class="label" for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <p class="error"></p>
-        </div>
+            <div class="field">
+                <label class="label" for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <p class="error"></p>
+            </div>
 
-        <div class="field">
-            <label for="confirmPassword">Password confirmation</label>
-            <input type="password" name="confirmPassword" id="confirmPassword">
-            <p class="error"></p>
-        </div>
+            <div class="field">
+                <label for="confirmPassword">Password confirmation</label>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+                <p class="error"></p>
+            </div>
 
-        <div class="showPass">
-            <label for="show" class="label">Show passwords</label>
-            <input type="checkbox" onclick="showPasswords()" name="show" id="show">
-        </div>
+            <div class="showPass">
+                <label for="show" class="label">Show passwords</label>
+                <input type="checkbox" onclick="showPasswords()" name="show" id="show">
+            </div>
 
-        <button class="button" type="submit" id="registerBtn">Register</button>
-    </form>
+            <button class="button" type="submit" id="registerBtn">Register</button>
+        </form>
+    </div>
 </div>
 <script src="script.js"></script>
 </body>
