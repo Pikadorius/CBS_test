@@ -9,7 +9,6 @@
 .wrapper {
   width: 600px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 h1 {
@@ -20,7 +19,7 @@ h1 {
 form {
   border-radius: 20px;
   width: 100%;
-  margin: 20px auto;
+  margin: 20px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -30,20 +29,20 @@ form {
 
 .field {
   margin-bottom: 20px;
-  height: 87px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
   color: white;
+  font-size: 14px;
 }
 
 input {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
   outline: none;
   color: rgb(34, 34, 91);
@@ -57,7 +56,7 @@ input[type="checkbox"] {
 button[type="submit"] {
   align-self: center;
   padding: 15px 5px;
-  margin: 20px;
+  margin-top: 20px;
   border-radius: 10px;
   border: none;
   background-color: #33c52d;
@@ -65,7 +64,6 @@ button[type="submit"] {
   font-size: 16px;
   cursor: pointer;
   width: 50%;
-  letter-spacing: 1px;
 }
 
 .error {
@@ -95,7 +93,6 @@ button[type="submit"] {
   left: 0;
   width: 100vw;
   height: 100vh;
-  text-align: center;
   color: black;
   background-color: rgba(204, 204, 204, 0.6);
   z-index: 500;

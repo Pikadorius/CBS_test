@@ -82,7 +82,7 @@ form.addEventListener('submit', async (e) => {
         validateConfirmPassword(confirmPassword, password);
 
     if (isValidForm) {
-        const postData = {
+        const formData = {
             name: name.value.trim(),
             surname: surname.value.trim(),
             birthday: birthday.value,
@@ -94,7 +94,7 @@ form.addEventListener('submit', async (e) => {
             loading.style.display="flex";
             const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
-                body: JSON.stringify(postData),
+                body: JSON.stringify(formData),
                 headers: {
                     'Content-Type': 'application/json'
                 },
