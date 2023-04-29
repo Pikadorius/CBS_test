@@ -25,7 +25,8 @@ const validateData = (input) => {
 
 const validateBirthday = (input) => {
     const value = input.value;
-    if (!value || new Date(value) > new Date()) {
+    if (value.length === 0) return showError(input, 'Required field!');
+    else if (!value || new Date(value) > new Date()) {
         return showError(input, 'Incorrect date of birth.');
     } else {
         return showError(input, '');
@@ -36,7 +37,8 @@ const validateEmail = (input) => {
     const value = input.value.trim();
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!regex.test(value)) {
+    if (value.length === 0) return showError(input, 'Required field!');
+    else if (!regex.test(value)) {
         return showError(input, 'Please enter a valid email.');
     } else {
         return showError(input, '');
@@ -47,7 +49,8 @@ const validatePassword = (input) => {
     const value = input.value.trim();
     const regex = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}$/;
 
-    if (!regex.test(value)) {
+    if (value.length === 0) return showError(input, 'Required field!');
+    else if (!regex.test(value)) {
         return showError(input, 'Password must be at least 8 characters long, contain at least 1 number, 1 uppercase character and 1 special character !@#$%.');
     } else {
         return showError(input, '');
@@ -57,7 +60,8 @@ const validatePassword = (input) => {
 const validateConfirmPassword = (input, passwordInput) => {
     const value = input.value.trim();
 
-    if (!value || value !== passwordInput.value.trim()) {
+    if (value.length === 0) return showError(input, 'Required field!');
+    else if (!value || value !== passwordInput.value.trim()) {
         return showError(input, 'Passwords mismatch!');
     } else {
         return showError(input, '');
