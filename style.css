@@ -87,3 +87,19 @@ button[type="submit"] {
   justify-content: space-around;
   align-items: center;
 }
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: black;
+  background-color: rgba(204, 204, 204, 0.6);
+  z-index: 500;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+}

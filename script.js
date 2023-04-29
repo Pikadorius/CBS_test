@@ -5,6 +5,7 @@ const birthday = form.querySelector('#birthday');
 const email = form.querySelector('#email');
 const password = form.querySelector('#password');
 const confirmPassword = form.querySelector('#confirmPassword');
+const loading = document.querySelector('#loading');
 
 const showError = (input, message) => {
     const errorElement = input.parentElement.querySelector('.error');
@@ -90,6 +91,7 @@ form.addEventListener('submit', async (e) => {
         };
 
         try {
+            loading.style.display="flex";
             const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
                 body: JSON.stringify(postData),
@@ -105,6 +107,8 @@ form.addEventListener('submit', async (e) => {
             console.log(data);
         } catch (e) {
             console.log(e);
+        } finally {
+            loading.style.display="none"
         }
     }
 });
