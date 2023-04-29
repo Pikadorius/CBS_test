@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  border-radius: 20px;
+  width: 100%;
+  margin: 50px auto;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: rgba(26, 26, 26, 0.96);
+}
+
+.field {
+  margin-bottom: 20px;
+  height: 87px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  color:rgb(4, 3, 36);
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 15px 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #33c52d;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  letter-spacing: 1px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    min-width: 300px;
+    max-width: 450px;
+  }
+}
